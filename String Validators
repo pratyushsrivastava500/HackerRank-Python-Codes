@@ -72,9 +72,20 @@ SOURCE CODE:
 c = input()
 
     
-print(any(i.isalnum() for i in c))                  #here we use any function because we have to return boolean values  
-                                                     #and we use for loop because we are going to iterate overall string
 print(any(i.isalpha() for i in c))
 print(any(i.isdigit() for i in c))
 print(any(i.islower() for i in c))
 print(any(i.isupper() for i in c))
+
+
+
+
+print(any(i.isalnum() for i in c))                
+
+
+ 
+#The any() function returns a boolean value:
+
+True if at least one element of an iterable is true
+False if all elements are false or if an iterable is empty
+#and we use for loop because we are going to iterate each character of  string
