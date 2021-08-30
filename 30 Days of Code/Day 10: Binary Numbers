@@ -1,0 +1,22 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+if __name__ == '__main__':
+    n = int(input().strip())
+    nbin = str(bin(n))
+    currMax = 0
+    count = 0 
+    
+    for i in nbin:
+        if i=='1':
+            count=count+1 
+        else:
+            currMax = max(count,currMax)
+            count=0 
+    print(max(currMax,count))
+    
