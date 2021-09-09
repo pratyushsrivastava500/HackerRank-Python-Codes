@@ -1,0 +1,9 @@
+def getNode(head, positionFromTail):
+    # Write your code here
+    current = head
+    nums=[]
+    while current is not None:
+        nums.append(current.data)
+        current=current.next
+
+    return nums[len(nums)-position-1]
